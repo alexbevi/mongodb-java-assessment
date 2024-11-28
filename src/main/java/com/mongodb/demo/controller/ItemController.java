@@ -42,10 +42,14 @@ public class ItemController {
     }
 
     /* DELETE */
+    @DeleteMapping("/{id}")
+    public void deleteItem(@PathVariable String id) {
+        itemService.deleteItem(id);
+    }
 
     /* SEARCH */
     @GetMapping("/search")
     public List<Item> searchItems(@RequestParam String name) {
-        return List.of(); // FIXME
+        return itemService.findByName(name);
     }
 }
