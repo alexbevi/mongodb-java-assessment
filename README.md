@@ -15,6 +15,16 @@ This project can be used during a technical interview to assess the Java program
 
 ![](docs/SS%202024-11-28%2014.19.45.png)
 
+## Preparation
+
+Make sure you're prepared to clone and run Java code. Specifically you'll need:
+
+* an IDE such as [Visual Studio Code](https://code.visualstudio.com/download) or [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download/other.html)
+* Java 17
+* [Apache Maven](https://maven.apache.org/download.cgi)
+
+Note that if you're on macOS and have [Homebrew](https://brew.sh/) available you can install Java and Maven by entering `brew install openjdk@17 maven`.
+
 ## Tasks
 
 * Configure the Spring Data MongoDB application with the provided connection string
@@ -22,9 +32,9 @@ This project can be used during a technical interview to assess the Java program
 * Setup the `Item` model with appropriate property accessors
 * Using Maven or Gradle, build and start the application and navigate to http://localhost:8080 to verify it works
 * Create a couple items via the UI
-* Inspect the backing JavaScript file to identify what API call is used for searching, then work backwards to enable this functionality
 * Using the API, list all created items
 * Create an API method for deleting an item by Id, then delete an item using this API
+* [Optional] Inspect the backing JavaScript file to identify what API call is used for searching, then work backwards to enable this functionality
 
 ## Additional Resources
 
